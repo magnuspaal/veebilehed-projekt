@@ -1,0 +1,156 @@
+.search {
+    background-color: lightgrey;
+    height: 200px;
+}
+
+.search-box {
+    display: flex;
+    background-color: #4169E1;
+    border: 5px solid #4169E1;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 500px;
+}
+
+.where {
+    background-size: 30px;
+    background-position: 8px 10px;
+    background-image: url(../images/bedicon.png);
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    width: 50%;
+    height: 50px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    border: white;
+}
+
+.who {
+    background-size: 30px;
+    background-position: 8px 10px;
+    background-image: url(../images/calendaricon.png);
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    width: 50%;
+    height: 50px;
+    margin: 5px 3px;
+    border-radius: 5px;
+    border: white;
+}
+
+.amount {
+    background-size: 30px;
+    background-position: 8px 10px;
+    background-image: url(../images/user-silhouette.png);
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    width: 20%;
+    margin: 5px 3px;
+    border-radius: 5px;
+    border: white;
+}
+
+.otsi {
+    width: 20%;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin: 5px 3px;
+    border-radius: 5px;
+}
+
+.home {
+    color: lightgray;
+}
+
+.home-title {
+    margin: 50px 0px;
+}
+
+.home-images {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    width: 95%;
+    margin: 0px 0px 50px 0px;
+}
+
+.primary-image-section {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    background-color: lightgray;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.primary-image {
+    background-image: url(../images/vspa.jpg);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position: -200px -200px;
+    position: absolute;
+    height: 98%;
+    width: 98%;
+    top: 15px;
+    left: 15px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.secondary-images {
+    width: 50%;
+    height: 500px;
+}
+
+.secondary-image-section {
+    height: 47%;
+    position: relative;
+    background-color: #4169E1;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.secondary-image {
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 500px;
+    height: 98%;
+    width: 98%;
+    top: 15px;
+    left: 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.secondary-image-1 {
+    background-image: url(../images/lydia.jpg);
+    background-position: 0px 0px;
+}
+
+.secondary-image-2 {
+    background-image: url(../images/kalevspa.jpg);
+    background-position: 0px 0px;
+}
+
+.image-text {
+    color: black;
+    position: absolute;
+    background-color: gray;
+    opacity: 0.8;
+    z-index: 2;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.image-title {
+    margin: 8px;
+}
+
+.image-desc {
+    margin: 8px;
+}
