@@ -3,7 +3,6 @@
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 20%; /* Set the width of the sidebar */
     min-width: 180px;
-    overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     
   }
@@ -37,38 +36,49 @@
   .info{
     align-self: center;
     margin-left: 10%;
-    width: 30%;
+    width: 40%;
     min-width: 200px;
   }
   .info h2{
     font-weight: 100;
     font-size: 25px;
   }
-  .info-bot{
-    display: flex;
-  }
-  .info-bot div{
-    height: 100px;
-  }
+  
+  
   .info-heading{
     width: 20%;
     margin-left: 10%;
+    min-width: 180px;
   }
   .info-heading h1{
     font-weight: 100;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
   }
-  .info-text{
+  .info-text, .info-text-long{
     margin-left: 7%;
+    min-width: 200px;
   }
   .gray{
     background-color: lightgrey;
   }
-  
+  @media screen and (min-width: 501px){
+    .info-bot{
+      display: flex;
+    }
+    .info-bot div{
+      height: 100px;
+    }
+    .long div{
+      height: 150px;
+    }
+    .info-heading h1{
+      text-align: left;
+    }
+  }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-width: 500px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav {padding-top: 15px; margin-left: 5px;}
     .sidenav a {font-size: 18px;}
     .meist-top {
       margin-left: 0;
@@ -76,7 +86,29 @@
     .info{
       width: 50%;
     }
+    .info-bot div{
+      height: 60px;
+    }
+    .long{
+      height: 200px;
+    }
     .sidenav a{
       font-size: 15px;
     }
+    .info-heading {
+      margin-left: 25%;
+      width: 50%;
+      text-align: center;
+    }
+    .info-text p{
+      margin-left: 25%;
+      width: 50%;
+      text-align: center;
+    }
+    .info-text-long{
+      width: 80%;
+      margin-left: 10%;
+      text-align: center;
+    }
+    
   }
