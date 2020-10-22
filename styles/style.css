@@ -2,10 +2,13 @@ body {
     margin: 0;
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -26,7 +29,10 @@ body {
 .nav-section {
     width: 300px;
 }
-
+.sidenav a{
+    font-size: 1.5em !important;
+    font-weight: 400 !important;
+}
 .logo {
     display: flex;
     flex-direction: column;
@@ -37,17 +43,27 @@ body {
 .logo-image {
     max-width: 200px;
 }
+.phone .logo-image {
+    max-width: 110px;
+}
 
 .logo-text {
     padding: 0;
     margin: 0;
+    font-weight: 1000;
 }
-
+.phone .logo-text {
+    font-size: 1.5em !important;
+    margin-right: .5em;
+    margin-left: .5em;
+}
 .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    font-weight: 1000;
+    font-size: 2em;
 }
 
 .nav-link {
@@ -59,7 +75,9 @@ body {
     display: flex;
     align-items: flex-end;
 }
-
+.phone .nav-link {
+    font-size: .5em;
+}
 .sel-bar {
     display: block;
     border: 2px solid #353535;
@@ -84,12 +102,15 @@ footer {
     max-width: 1000px;
     width: 100%;
 }
+.footer-section,
+.footer-link {
+    color: var(--color-1);
+    font-size: .85em;
+    font-weight: 350 !important;
+}
 .footer-link {
     margin: 0px 8px;
     text-decoration: none;
-    color: var(--color-1);
-    font-size: medium;
-    font-weight: lighter;
     display: flex;
     align-items: flex-end;
 }
