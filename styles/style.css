@@ -24,8 +24,6 @@ body {
 }
 
 .nav-section {
-    display: flex;
-    justify-content: space-around;
     width: 300px;
 }
 
@@ -179,10 +177,24 @@ footer {
 }
 
 
-@media screen and (max-width: 900px) {
-
+@media screen and (max-width: 780px) {
+    .nav-section{
+        width: 20%;
+        padding-top: 15%;
+        justify-content: center;
+    }
+    .navbar{
+        margin-left: 20%;
+    }
+    .logo{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
-@media screen and (min-width: 900px) {
- 
+@media screen and (min-width: 780px) {
+    .nav-section{
+        display: flex;
+        justify-content: space-around;
+    }
 }
