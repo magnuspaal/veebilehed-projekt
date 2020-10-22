@@ -62,7 +62,7 @@
   .gray{
     background-color: lightgrey;
   }
-  @media screen and (min-width: 501px){
+  @media screen and (min-width: 511px){
     .info-bot{
       display: flex;
     }
@@ -77,11 +77,13 @@
     }
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 510px) {
     .sidenav {padding-top: 15px; margin-left: 5px;}
     .sidenav a {font-size: 18px;}
     .meist-top {
       margin-left: 0;
+      flex-direction: column;
+      align-items: center;
     }
     .info{
       width: 50%;
